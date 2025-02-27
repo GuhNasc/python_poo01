@@ -11,14 +11,14 @@ class CsvProcessor:
     def filtrar_csv(self, coluna, atributo):
         return self.df[self.df[coluna] == atributo]
 
-#arquivo_csv = './exemplo.csv'
-#
-#filtro = 'estado'
-#limite = 'SP'
-#
-#csv_processor = CsvProcessor(arquivo_csv)
-#csv_processor.carregar_csv()
-#print(csv_processor.filtrar_csv(filtro, limite))
+arquivo_csv = './exemplo.csv'
+
+filtro = 'estado'
+limite = 'SP'
+
+csv_processor = CsvProcessor(arquivo_csv)
+csv_processor.carregar_csv()
+print(csv_processor.filtrar_csv(filtro, limite))
 
 
 
